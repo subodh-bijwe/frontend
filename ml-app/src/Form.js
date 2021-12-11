@@ -63,7 +63,7 @@ function Form() {
          <input type="number" name="sex" onChange={onChange} value={form.sex} placeholder="Sex (Male: 0/Female: 1)" required />
          <input type="number" name="bmi" onChange={onChange} value={form.bmi} placeholder="BMI" required />
          <input type="number" name="children" onChange={onChange} value={form.children} placeholder="Number of Children" required />
-         <input type="number" name="smoker" onChange={onChange} value={form.smoker} placeholder="Smoker" required />
+         <input type="number" name="smoker" onChange={onChange} value={form.smoker} placeholder="Smoker (Yes: 0/No: 1)" required />
          {result && <span onClick={handleClear}>Clear Prediction</span>}
 
          <button type="submit" disabled={loading}>{loading ? "Predicting Result..." : "Submit Form"}</button>
